@@ -17,7 +17,7 @@ const App = () => {
   const [error, setError] = useState(null)
   const getWeather = async () => {
     try {
-      const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=7032064b9fbc4f6eb3d153741242208&q=${cityName}`)
+      const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=7032064b9fbc4f6eb3d153741242208&q=${cityName}`)
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`)
       const data = await response.json();
       console.log(data.current);
