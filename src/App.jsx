@@ -70,7 +70,7 @@ const App = () => {
               </div>
 
               <div className='w-full h-[300px] pt-14'>
-                <img src={getWeatherImage(cityData?.current?.condition?.text)} alt="" className='mx-auto w-[250px] drop-shadow-xl' />
+                <img src={getWeatherImage(cityData?.current?.condition?.text) || Sun} alt="" className='mx-auto w-[250px] drop-shadow-xl' />
               </div>
 
              {
